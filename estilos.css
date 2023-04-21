@@ -1,0 +1,592 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*LOGO FLOTANTE WHATSAAP*/
+.whatsapp{
+    z-index: 9999;
+    bottom: 200px;
+    right: 50px;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(40, 179, 28);
+    cursor: pointer;
+}
+
+.whatsapp img{
+    width: 100%;
+}
+/*AQUI TERMINA*/
+
+
+
+
+
+
+.ecofilter_contenido{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_eco{
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.logo_eco{
+    width: 45%;
+}
+
+.ecofil_logo{
+    width: 100%;
+}
+.icon_nav{
+    margin-right: 15px;
+}
+
+.links{
+    display: none;
+}
+
+/* seccion de textos e imagenes*/
+.contenido-texto_imagen{
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+.textos_eco{
+    width: 90%;
+    margin: 0 auto;
+    color: black;
+}
+
+.titulo{
+    color: rgb(74, 74, 74);
+    font-size: 1.1em;
+    margin: 0 auto;
+    text-align: center;
+    font-size: "Calibri";
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 1.6em;
+    font-family: sans-serif;
+}
+
+.promocion{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 19px;
+}
+.promocion span{
+    color: rgb(52, 171, 52);
+    font-style: italic;
+
+}
+
+.img_purificador{
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+}
+
+.centro_contenido{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.fondo{
+    position: absolute;
+    background-color:  rgba(54, 197, 54, 0.45);
+    height: 170px;
+    width: 100%;
+    top: 169px;
+}
+
+.texttitos{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-right: 12px;
+
+
+}
+.numero{
+    font-size: 65px;
+}
+
+.descuento{
+    font-size: 16px;
+    letter-spacing: 7px;
+}
+
+
+/*checkbox*/
+
+.checkbox{
+    margin-top: 100px;
+    width: 100%;
+}
+.contenido_checkbox{
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.texto_1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.texto_2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: lighter;
+
+}
+
+
+/*Beneficios*/
+.Beneficios_Carrusel{
+    margin-top: 90px;
+    width: 100%;
+}
+.contenido_textos_carrusel{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo_carrusel{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(31, 184, 31);
+}
+
+.subtitulo_carrusel{
+    font-family: monospace;
+    font-size: 22px;
+    color: rgb(10, 28, 66);
+}
+
+/*slider de beneficios*/
+
+.slider {
+    position: relative;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+
+  .slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: flex;
+    transition: 2s;
+}
+
+  .slide img{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    margin: 0 auto;
+    transition: 1s;
+
+  }
+  
+  .slide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(83, 83, 83, 0.473);
+    padding: 10px;
+    text-align: center;
+    font-family: "Calibri";
+
+  }
+
+  .slide-text p {
+    font-size: 1.3rem;
+  }
+  
+
+  /*seccion caracteristica*/
+
+.caracteristicas{
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.caracterisiticas_texto{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.titulo_caracteristica{
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(31, 184, 31);
+}
+
+.subtitulo_caracteristica{
+    font-family: monospace;
+    font-size: 22px;
+    color: rgb(10, 28, 66);
+}
+
+/* contiene la imagen junto con los textos a la derecha*/
+.caracteristica_imagen{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+    height: 500px;
+    position: relative;
+}
+
+.img_filtroTresCapas{
+    margin-top: 10px;
+    height: 100%;
+}
+
+.bot{
+    display: flex;
+    flex-direction: row;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(108, 228, 99, 0.948);
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+
+}
+
+.bot_uno{
+    top: 60px;
+    left: 75px;
+}
+
+.bot_texto{
+    top: 50px;
+    left: 170px;
+    position: absolute;
+    width: 65%;
+
+}
+.bot_texto span{
+    font-weight: bold;
+}
+
+.bot_dos{
+    top: 120px;
+    left: 75px;
+}
+.bot_texto_dos{
+    top: 120px;
+    left: 170px;
+    position: absolute;
+    width: 55%;
+}
+.bot_texto_dos span{
+    font-weight: bold;
+}
+
+.bot_tres{
+    top: 300px;
+    left: 75px;
+}
+
+.bot_texto_tres{
+    top: 280px;
+    left: 170px;
+    position: absolute;
+    width: 55%;
+}
+.bot_texto_tres span{
+    font-weight: bold;
+}
+
+/*llave de acero img y texto*/
+.caracterisitica_llaveAcero{
+    margin-top: 10px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(242, 242, 242);
+}
+
+.imgs_llavedeacero{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 30px 0 ;
+    display: flex;
+}
+.acero_img{
+    width: 50%;
+    object-fit: cover;
+}
+.acero2_img{
+    height: 230px;
+    width: 50%;
+    image-rendering: crisp-edges;
+}
+
+.content_texto_acero{
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+}
+
+.content_texto_acero{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.texto_acero{
+    font-family: Georgia, Times, serif;
+    text-align: start;
+    font-size: 20px;
+}
+
+
+/*caracterisiticas propileno y img*/
+.caracterisitica_polipropileno{
+    margin-top: 80px;
+    width: 100%;
+}
+.imgs_polipropileno{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+}
+.img_propi{
+    width: 30%;
+}
+.propileno_img{
+    width: 70%;
+}
+
+/*textos*/
+.content_texto_propileno{
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+.texto_material{
+    margin-bottom: 10px;
+}
+
+.texto_material span{
+    font-weight: bold;
+}
+
+.texto_tamaño{
+    margin-bottom: 10px;
+}
+.texto_tamaño span{
+    font-weight: bold;
+}
+
+.texto_color span{
+    font-weight: bold;
+
+}
+
+
+/* footer con olas*/
+
+footer{
+    margin-top: 150px;
+    position: relative;
+    width: 100%;
+}
+
+footer .waves{
+    position: relative;
+}
+
+footer .waves .wave{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(./img/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .waves .wave#wave1{
+    opacity: 1;
+    bottom: 0;
+    z-index: 1000;
+    animation: animate 4s linear infinite;
+}
+
+footer .waves .wave#wave2{
+    opacity: 0.5;
+    bottom: 10px;
+    z-index: 999;
+    animation: animate2 4s linear infinite;
+}
+
+footer .waves .wave#wave3{
+    opacity: 0.2;
+    bottom: 15px;
+    z-index: 998;
+    animation: animate 2s linear infinite;
+}
+
+footer .waves .wave#wave4{
+    opacity: 0.7;
+    bottom: 20px;
+    z-index: 999;
+    animation: animate2 2s linear infinite;
+}
+
+
+.textos_footer{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(42, 134, 255);
+}
+
+.contenido_total_footer_textos{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.marca-content{
+    padding-top: 20px;
+}
+.marca{
+    margin-bottom: 35px;
+    font-size: 40px;
+    font-family: Verdana;
+    color: rgb(201, 232, 255);
+}
+
+
+.nuestrosDatos{
+    width: 90%;
+    font-family: arial;
+    color: white;
+    align-items: center;
+    gap: 30px;
+
+}
+.direccion{
+    margin-bottom: 10px;
+}
+
+.email{
+    margin-bottom: 10px;
+}
+
+.redes_sociales_footer{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: white;
+}
+
+.visita{
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.lasredes{
+    gap: 30px;
+}
+.icon_redes{
+    width: 12%;
+}
+
+.derechosR{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.dr{
+    color: white;
+    font-size: 17px;
+}
+@keyframes animate {
+    0%{
+        background-position-x: 1000px;
+    }100%{
+        background-position-x: 0px;
+    }
+    
+}
+
+@keyframes animate2 {
+    0%{
+        background-position-x: 0px;
+    }100%{
+        background-position-x: 1000px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
