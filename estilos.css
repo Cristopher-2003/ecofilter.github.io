@@ -8,7 +8,7 @@
 .whatsapp{
     z-index: 9999;
     bottom: 200px;
-    right: 50px;
+    right: 10px;
     position: fixed;
     width: 50px;
     height: 50px;
@@ -41,7 +41,6 @@
 
 .nav_eco{
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
 }
 
@@ -51,6 +50,9 @@
 
 .ecofil_logo{
     width: 100%;
+}
+.ecofil_hamburguer{
+    width: 110%;
 }
 .icon_nav{
     margin-right: 15px;
@@ -199,7 +201,9 @@
 }
 
 /*slider de beneficios*/
-
+.slider_para_dispositivos_grandes{
+    display: none;
+}
 .slider {
     position: relative;
     margin-top: 30px;
@@ -212,7 +216,7 @@
   
   .slide.active {
     display: flex;
-    transition: 2s;
+    transition: 1s;
 }
 
   .slide img{
@@ -307,7 +311,7 @@
     top: 50px;
     left: 170px;
     position: absolute;
-    width: 65%;
+    width: 50%;
 
 }
 .bot_texto span{
@@ -514,13 +518,19 @@ footer .waves .wave#wave4{
     gap: 30px;
 
 }
-.direccion{
-    margin-bottom: 10px;
+
+.nuestrosDatos .icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .email{
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
 }
+
 
 .redes_sociales_footer{
     text-align: center;
@@ -573,7 +583,176 @@ footer .waves .wave#wave4{
 
 
 
+@media (min-width:675px){
 
+    .nav_eco{
+        height: 160px;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+    .logo_eco{
+        width: 30%;
+
+    }
+
+
+    .icon_nav{
+        display: none;
+    }
+    .links{
+        display: flex;
+        gap: 45px;
+    }
+    .link{
+        list-style: none;
+    }
+    
+    .main_link{
+        text-decoration: none;
+        color: rgb(5, 84, 5);
+        font-size: 1.3em;
+    }
+
+    .main_link:hover{
+        transition: .5s;
+        border-bottom: 3px solid green;
+    }
+
+    .titulo{
+        font-size: 2.3em;
+    }
+    .subtitulo{
+        font-size: 3.4em;
+    }
+    .promocion{
+        font-size: 1.5em;
+    }
+    
+
+    .improvisado{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img_purificador{
+        width: 60%;
+        height: 50%;
+    }
+    .purificador{
+        width: 70%;
+    }
+    .fondo{
+        position: absolute;
+        background-color:  rgba(54, 197, 54, 0.45);
+        height: 200px;
+        width: 100%;
+        top: 140px;
+    }
+    .numero{
+        font-size: 5em;
+    }
+    .descuento{
+        font-size: 2em;
+    }
+    
+    .checkbox{
+        width: 40%;
+    }
+    .texto_1{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 23px;
+        text-align: justify;
+        font-weight: lighter;
+    }
+    .texto_2{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 23px;
+        text-align: justify;
+        font-weight: lighter;
+    
+    }
+    .titulo_carrusel{
+        font-size: 3.5em;
+    }
+    .subtitulo_carrusel{
+        font-size: 2.4em;
+    }
+    .slider{
+        display: none;
+    }
+    .slider_para_dispositivos_grandes{
+        width: 95%;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+        gap: 5px;
+        display: grid;
+        grid-template-areas: 
+        "ele1 ele1 ele1 ele2 ele2"
+        "ele1 ele1 ele1 ele2 ele2"
+        "ele1 ele1 ele1 ele2 ele2"
+        "ele1 ele1 ele1 ele3 ele3"
+        "ele1 ele1 ele1 ele3 ele3";
+    }
+    .ele1{
+        border-radius: 10px 0 0 10px;
+        grid-area: ele1;
+        background-image: linear-gradient(rgba(0, 0, 255, 0) , rgba(0, 0, 0, 0.809)) ,url(./img/alimentos.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .textos_slider_grandes{
+        width: 90%;
+        font-size: 20px;
+        font-family: "Calibri";
+        color: white;
+        margin: 400px 0 0 10px ;
+    }
+  
+    .ele2{
+        border-radius: 0 10px 0 0;
+        grid-area: ele2;
+        background-image: linear-gradient(rgba(0, 0, 255, 0) , rgba(0, 0, 0, 0.829)),url(./img/tomandoagua.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .texto_slider_dos{
+        width: 90%;
+        font-size: 20px;
+        font-family: "Calibri";
+        color: white;
+        text-align: justify;
+        margin: 120px 0 0 10px;
+
+    }
+
+    .ele3{
+        border-radius: 0 0 10px 0;
+        position: relative;
+        grid-area: ele3;
+        background-image:linear-gradient(rgba(0, 0, 255, 0) , rgba(0, 0, 0, 0.829)) ,url(./img/repartidor.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .ele3 .texto_slider_tres{
+        width: 90%;
+        font-size: 20px;
+        font-family: "Calibri";
+        color: white;
+        margin: 140px 0 0 10px;
+    }
+}
 
 
 
