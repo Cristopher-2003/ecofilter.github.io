@@ -9,7 +9,7 @@
     margin-top: 20px;
     z-index: 9999;
     bottom: 200px;
-    right: 35px;
+    right: 20px;
     position: fixed;
     width: 50px;
     height: 50px;
@@ -421,13 +421,26 @@
 
 }
 
+.direccion_mapa_google{
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.mapita{
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /* footer con olas*/
 
 footer{
-    margin-top: 150px;
+    margin-top: 170px;
     position: relative;
     width: 100%;
+
 }
 
 footer .waves{
@@ -773,6 +786,48 @@ footer .waves .wave#wave4{
     .bot_texto_tres{
         font-size: 25px;
     }
+
+    .seccion_llave_acero{
+        display: flex;
+        align-items: center;
+    }
+
+    .imgs_llavedeacero{
+        width: 50%;
+    }
+    .content_texto_acero{
+        width: 40%;
+    }
+
+    .texto_acero{
+        font-size: 25px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .caracterisitica_polipropileno{
+        margin-top: 90px;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+
+    .imgs_polipropileno{
+        width: 70%;
+        object-fit: cover;
+    }
+    .content_texto_propileno{
+        text-align: center;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .marca{
+        font-size: 55px;
+    }
+    
+
 }
 
 
